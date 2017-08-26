@@ -1,0 +1,22 @@
+{
+    "name": "lilo-bot",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "npm run build && node ./dist/app.js",
+        "build": "babel src -d dist",
+        "debug": "npm run build && env NODE_ENV=debug node ./dist/app.js"
+    },
+    "dependencies": {
+        "blessed": "^0.1.81",
+        "blessed-contrib": "^4.8.5",
+        "chalk": "^2.1.0",
+        "chance": "^1.0.10",
+        "date-format": "^1.1.0",
+        "dotenv": "^4.0.0",
+        "request": "^2.81.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.0"
+    }
+}
